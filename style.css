@@ -1,0 +1,236 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    align-items: center; 
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* .body_section{
+    background:#252839;
+} */
+
+.home{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* min-height: 40vh; */
+    /* background: #252839; */
+    
+}
+.home h1{
+    position: relative;
+    font-size: 5vw;
+    /* color: #252839; */
+    color:white;
+    /* -webkit-text-stroke:0.3vw #383d52 ; */
+    -webkit-text-stroke:0.3vw rgb(192, 245, 179) ;
+    /* text-transform: uppercase; */
+}
+.home h1::before{
+    content: attr(data-text);
+    position: absolute;
+    top: 10;
+    left: 10;
+    width: 0;
+    height: 33%;
+    /* color: #01fe87; */
+    color: green;
+    -webkit-text-stroke: #383d52;
+    /* border-right: 2px solid #01fe87; */
+    border-right: 2px solid green;
+    overflow: hidden;
+    animation: animate 6s linear infinite;
+}
+@keyframes animate{
+    0%, 10%, 100%{
+        width: 0;
+    }
+    70%, 90%{
+        width: 81%;
+    }
+}
+
+.heading{
+    text-align: center;
+    padding:2rem 0;
+    padding-bottom: 3rem;
+    font-size: 2.0rem;
+    color:var(--black);
+}
+
+.heading span{
+    /* background: var(--orange); */
+    background:green;
+    color:#fff;
+    display: inline-block;
+    padding:0.5rem 3rem;
+    clip-path: polygon(100% 0, 93% 50%, 100% 99%, 0% 100%, 7% 50%, 0% 0%);
+}
+
+.home h1{
+    padding: 100px;
+    font-weight: 600;
+}
+.gate h2{
+    margin: 50px;
+}
+.gate img{
+    margin: 10px;
+    border: 10px solid;
+}
+.floor h2{
+    margin: 50px;
+}
+ img{
+    margin: 10px;
+    border: 10px solid;
+    width: 60%;
+}
+.contact p span{
+    color: red;
+}
+@media (max-width:1300px){
+    @keyframes animate{
+        0%, 10%, 100%{
+            width: 0;
+        }
+        70%, 90%{
+            width: 78%;
+        }
+    }
+   
+}
+@media (max-width:1100px){
+    @keyframes animate{
+        0%, 10%, 100%{
+            width: 0;
+        }
+        70%, 90%{
+            width: 75%;
+        }
+    } 
+    .home h1::before{
+        top: 10;
+        left: 10;
+        width: 0;
+        height: 30%;
+    }
+}
+@media (max-width:900px){
+    @keyframes animate{
+        0%, 10%, 100%{
+            width: 0;
+        }
+        70%, 90%{
+            width: 72%;
+        }
+    } 
+    .home h1::before{
+        top: 10;
+        left: 10;
+        width: 0;
+        height: 27%;
+    }
+    img{
+        width: 80%;
+    }
+}
+@media (max-width:700px){
+    @keyframes animate{
+        0%, 10%, 100%{
+            width: 0;
+        }
+        70%, 90%{
+            width: 67%;
+        }
+    } 
+    .home h1::before{
+        top: 10;
+        left: 10;
+        width: 0;
+        height: 24%;
+    }
+}
+@media (max-width:600px){
+    @keyframes animate{
+        0%, 10%, 100%{
+            width: 0;
+        }
+        70%, 90%{
+            width: 63%;
+        }
+    } 
+    .home h1::before{
+        top: 10;
+        left: 10;
+        width: 0;
+        height: 22%;
+    }
+    img{
+        width: 85%;
+    }
+    
+}
+@media (max-width:500px){
+    @keyframes animate{
+        0%, 10%, 100%{
+            width: 0;
+        }
+        70%, 90%{
+            width: 59%;
+        }
+    } 
+    .home h1::before{
+        top: 10;
+        left: 10;
+        width: 0;
+        height: 20%;
+    }
+    .heading{
+        font-size: 1.5rem;
+    }
+    img{
+        width: 90%;
+    }
+  
+}
+@media (max-width:450px){
+    @keyframes animate{
+        0%, 10%, 100%{
+            width: 0;
+        }
+        70%, 90%{
+            width: 56%;
+        }
+    } 
+    .home h1::before{
+        top: 10;
+        left: 10;
+        width: 0;
+        height: 18%;
+    }
+    .heading{
+        font-size: 1.5rem;
+    }
+}
+@media (max-width:400px){
+    @keyframes animate{
+        0%, 10%, 100%{
+            width: 0;
+        }
+        70%, 90%{
+            width: 53%;
+        }
+    } 
+    .home h1::before{
+        top: 10;
+        left: 10;
+        width: 0;
+        height: 10%;
+    }
+    .heading{
+        font-size: 1.4rem;
+    }
+}
